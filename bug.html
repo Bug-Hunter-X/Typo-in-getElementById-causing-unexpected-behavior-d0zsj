@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrectly referencing the div using document.getElementById
+    // This code throws an error in some browsers
+    let myDiv = document.getElementByIdx('myDiv'); //Typo here! 
+    myDiv.innerHTML = "<p>Text changed.</p>";
+  </script>
+</body>
+</html>
